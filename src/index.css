@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-editorial-bg: #F8F5F1;
+  --color-editorial-ink: #1A1A1A;
+  --color-editorial-accent: #D9534F;
+  --color-editorial-muted: #7E7E7E;
+  --color-editorial-line: #2A2A2A;
+  --font-serif: 'Georgia', 'Lora', serif;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Courier New', monospace;
+}
+
+body {
+  background-color: var(--color-editorial-bg);
+  color: var(--color-editorial-ink);
+  font-family: var(--font-sans);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "SmartPrep MVD",
+  "description": "App para trackear precios de insumos, recetas y optimizar el presupuesto de comidas en Montevideo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
