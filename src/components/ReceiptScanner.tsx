@@ -58,11 +58,13 @@ export default function ReceiptScanner({ onScanComplete }: Props) {
       `;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
-        contents: [
-          { text: prompt },
-          { inlineData: { data: base64Data, mimeType: file.type } }
-        ]
+        model: 'gemini-3-flash-preview',
+        contents: {
+          parts: [
+            { text: prompt },
+            { inlineData: { data: base64Data, mimeType: file.type } }
+          ]
+        }
       });
 
       let jsonText = response.text || '[]';
